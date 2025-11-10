@@ -4,12 +4,26 @@
 
 ## Установка
 
-1. Установите зависимости:
+1. Создайте и активируйте виртуальное окружение:
+
+   **Windows (PowerShell):**
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   ```
+
+   **Linux/macOS:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+2. Установите зависимости:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Установите FFmpeg (необходим для работы с аудио):
+3. Установите FFmpeg (необходим для работы с аудио):
    - Windows: скачайте с [ffmpeg.org](https://ffmpeg.org/download.html) или используйте `choco install ffmpeg`
    - Linux: `sudo apt install ffmpeg` или `sudo yum install ffmpeg`
    - macOS: `brew install ffmpeg`
